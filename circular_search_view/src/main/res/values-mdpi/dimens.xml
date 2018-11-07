@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_bottom_margin">10dp</dimen>
+    <dimen name="login_card_elevation">5dp</dimen>
+    <dimen name="text_ans_margin">8dp</dimen>
+    <dimen name="card_margin">20dp</dimen>
+    <dimen name="logo_height">40dp</dimen>
+    <dimen name="signup_logo_height">60dp</dimen>
+    <dimen name="curiosity_bottom_margin">20dp</dimen>
+
+    <dimen name="social_button_height">40dp</dimen>
+    <dimen name="mic_camera_width_height">70dp</dimen>
+    <dimen name="camera_image_height">220dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="curve_header_height">160dp</dimen>
+    <dimen name="search_image_width">350dp</dimen>
+    <dimen name="circle_radius">125dp</dimen>
+    <dimen name="circle_size">300dp</dimen>
+
+    <dimen name="infographics">60dp</dimen>
+
+    <dimen name="circular_progress">85dp</dimen>
+    <dimen name="margin_default">10dp</dimen>
+</resources>
