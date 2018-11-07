@@ -46,8 +46,10 @@ class CircularSearchView : RelativeLayout {
         searchView = inflator.inflate(R.layout.layout_search_view, this)
 
         attrs?.let {
-            val typedArray = context.obtainStyledAttributes(it,
-                R.styleable.CircularSearchView, 0, 0)
+            val typedArray = context.obtainStyledAttributes(
+                it,
+                R.styleable.CircularSearchView, 0, 0
+            )
 
             createIconWithSize(searchView, typedArray)
 
@@ -56,6 +58,7 @@ class CircularSearchView : RelativeLayout {
 
         searchView.image_user_1.visibility = View.VISIBLE
         mCircleRadius = resources.getDimension(R.dimen.circle_radius)
+
         startCircularAnimation(searchView, searchView.image_user_1, mCircleAnimTime, mCircleRadius)
 
 //        addView(searchView)
@@ -63,24 +66,40 @@ class CircularSearchView : RelativeLayout {
 
     private fun createIconWithSize(searchView: View, typedArray: TypedArray) {
 
-        val mIcon = resources.getDrawable(typedArray
-            .getResourceId(R.styleable
-                .CircularSearchView_cs_icon, R.drawable.user1))
+        val mIcon = resources.getDrawable(
+            typedArray
+                .getResourceId(
+                    R.styleable
+                        .CircularSearchView_cs_icon, R.drawable.user1
+                )
+        )
 
-        val mIconSize = resources.getDimension(typedArray
-            .getResourceId(R.styleable
-                .CircularSearchView_cs_icon_size, R.dimen.margin80))
+        val mIconSize = resources.getDimension(
+            typedArray
+                .getResourceId(
+                    R.styleable
+                        .CircularSearchView_cs_icon_size, R.dimen.margin80
+                )
+        )
 
-        val mCenterIcon = resources.getDrawable(typedArray
-            .getResourceId(R.styleable
-                .CircularSearchView_cs_center_icon, R.drawable.ic_zoom))
+        val mCenterIcon = resources.getDrawable(
+            typedArray
+                .getResourceId(
+                    R.styleable
+                        .CircularSearchView_cs_center_icon, R.drawable.ic_zoom
+                )
+        )
 
-        val mCenterIconSize = resources.getDimension(typedArray
-            .getResourceId(R.styleable
-                .CircularSearchView_cs_center_icon_size, R.dimen.margin80))
+        val mCenterIconSize = resources.getDimension(
+            typedArray
+                .getResourceId(
+                    R.styleable
+                        .CircularSearchView_cs_center_icon_size, R.dimen.margin80
+                )
+        )
 
         // Set Icon size to ImageView
-        val layoutParams : ViewGroup.LayoutParams =  searchView.image_user_1.layoutParams
+        val layoutParams: ViewGroup.LayoutParams = searchView.image_user_1.layoutParams
         layoutParams.width = mIconSize.toInt()
         layoutParams.height = mIconSize.toInt()
         searchView.image_user_1.layoutParams = layoutParams
@@ -104,7 +123,7 @@ class CircularSearchView : RelativeLayout {
         searchView.image_center.layoutParams.height = mCenterIconSize.toInt()
     }
 
-    private fun startCircularAnimation(searchView : View , view: View, delay: Long, radius: Float) {
+    private fun startCircularAnimation(searchView: View, view: View, delay: Long, radius: Float) {
 
         val path = Path()
         path.addCircle(0F, 0f, radius, Path.Direction.CW)

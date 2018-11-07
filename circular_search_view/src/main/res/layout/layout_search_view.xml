@@ -24,7 +24,7 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image_center"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/mic_camera_width_height"
+        android:layout_height="@dimen/margin50"
         android:adjustViewBounds="true"
         android:cropToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"

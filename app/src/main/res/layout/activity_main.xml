@@ -13,6 +13,6 @@
             app:cs_icon_size="@dimen/margin80"
             app:cs_icon="@drawable/user5"
             app:cs_center_icon="@drawable/ic_zoom"
-            app:cs_center_icon_size="@dimen/margin60"/>
+            app:cs_center_icon_size="@dimen/margin50"/>
 
 </RelativeLayout>
