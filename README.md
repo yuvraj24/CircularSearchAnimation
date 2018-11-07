@@ -7,5 +7,6 @@
 ## Samples
 You can check the <a href="https://github.com/yuvraj24/CircularSearchAnimation/tree/master/app">Demo Project</a> developed in kotlin for better understanding of concepts & usage.
 
-## Usage
 ![Alt text](https://github.com/yuvraj24/CircularSearchAnimation/blob/master/app/media/sample.gif)
+
+## Usage
